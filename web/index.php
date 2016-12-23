@@ -30,10 +30,10 @@
                 <?php foreach($result as $bu=>$b): ?>
             <tr>
             <td>
-                <?php echo $b['SteamID']; ?>
+                <?php echo htmlspecialchars($b['SteamID'], ENT_QUOTES, 'UTF-8'); ?>
             </td>
             <td>
-                <?php echo $b['BugReport']; ?>
+                <?php echo htmlspecialchars($b['BugReport'], ENT_QUOTES, 'UTF-8'); ?>
             </td>
             </tr>
             <?php endforeach; ?>
