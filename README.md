@@ -1,4 +1,4 @@
-# Bug-Reporter
+# Bug Reporter
 A bug report system for garry's mod
 ##REQUIRES TMYSQL4
 https://facepunch.com/showthread.php?t=1442438
