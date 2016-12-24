@@ -26,6 +26,7 @@
     <div class="center-page">
     <div>
     <tbody>
+    <div class="table">
         <table>
             <tr>
                 <td colspan="2">Bug Reports</td>
@@ -45,6 +46,7 @@
             </tr>
             <?php endforeach; ?>
         </table>
+    </div>
     </tbody>
     </div>
     </div>
