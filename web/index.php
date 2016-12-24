@@ -2,7 +2,7 @@
     $DB_HOSTNAME = "localhost";
     $DB_USERNAME = "admin";
     $DB_PASSWORD = "password";
-    $DB_NAME = "geeneric_name";
+    $DB_NAME = "generic_name";
 
     $connection = new mysqli($DB_HOSTNAME, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
     $result = mysqli_query($connection, "SELECT SteamID,BugReport FROM bug_report");
