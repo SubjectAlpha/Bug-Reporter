@@ -18,7 +18,8 @@ end)
 local cooldown = {}
 
 local function GetSteamID(len, ply)
-    if cooldown[ply:SteamID()] and cooldown[ply:SteamID()] > CurTime() then           ply:PrintMessage(HUD_PRINTTALK, "You are currently on cooldown!")
+    if cooldown[ply:SteamID()] and cooldown[ply:SteamID()] > CurTime() then           
+	ply:PrintMessage(HUD_PRINTTALK, "You are currently on cooldown!")
         return
     end
     cooldown[ply:SteamID()] = CurTime() + cooldownTime
