@@ -20,7 +20,7 @@ local cooldown = {}
 local function GetSteamID(len, ply)
     if cooldown[ply:SteamID()] and cooldown[ply:SteamID()] > CurTime() then           ply:PrintMessage(HUD_PRINTTALK, "You are currently on cooldown!")
         return
-end
+    end
     cooldown[ply:SteamID()] = CurTime() + cooldownTime
     local bug_report_value = net.ReadString()
     BugDB:Query( "INSERT INTO bug_report (BugReport, SteamID) VALUES ('" .. BugDB:Escape(bug_report_value) .. "','" .. ply:SteamID() .. "');")
