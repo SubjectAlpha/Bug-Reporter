@@ -7,7 +7,7 @@ local DATABASE_NAME = "db_table"
 local DATABASE_USERNAME = "user"
 local DATABASE_PASSWORD = "pass"
 
-local BugDB = tmysql.Connect(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, DATABASE_PORTS)
+local BugDB = tmysql.Connect(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, DATABASE_PORT)
 
 hook.Add("Initialize", "create_bugdb", function()
 	BugDB:Query("CREATE TABLE IF NOT EXISTS bug_report (BugReport VARCHAR(500), SteamID VARCHAR(20));")
