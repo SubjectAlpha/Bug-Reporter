@@ -35,4 +35,12 @@ function BugReportDerma()
     end
 end
 
+hook.Add( "OnPlayerChat", "BugReportCommand", function( ply, strText, bTeam, bDead )
+    strText = string.lower(strText)
+    if (strText == "!bugreport") then
+        BugReportDerma()
+        return true
+    end
+end)
+
 concommand.Add("bug_reporter", BugReportDerma)
