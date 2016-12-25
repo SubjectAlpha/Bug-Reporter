@@ -37,7 +37,7 @@ end
 
 hook.Add( "OnPlayerChat", "BugReportCommand", function( ply, strText, bTeam, bDead )
     strText = string.lower(strText)
-    if (strText == "!bugreport") then
+    if (strText == "!bugreport" || strText == "!bug" || strText == "/bugreport" || strText == "/bug") then
         BugReportDerma()
         return true
     end
