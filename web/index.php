@@ -55,5 +55,6 @@
 <footer>
     <p>&copy;2016 <a href="https://github.com/SubjectAlpha" style="color:#fff;">Subject_Alpha</a> (Main idea + Basic Structure)</p>
     <p><a href="https://github.com/Lunaversitay/Bug-Reporter/tree/master/web" style="color:#fff;">Lunaversity</a> (Styles + Web Improvements)</p>
+    <p><a href="https://github.com/meharryp" style="color:#fff;">meharryp</a> (Security improvements)</p>
 </footer>
 </html>
