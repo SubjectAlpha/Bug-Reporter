@@ -6,6 +6,6 @@ https://facepunch.com/showthread.php?t=1442438
 Put the bugreporter folder in your addons. Upload the web folder to your webserver. Configure SQL connections.
 
 ##Thanks for the help
-https://github.com/Lunaversitay/ Lunaversity CSS/PHP improvements  
-https://github.com/meharryp/ meharryp Security fixes  
-https://github.com/SteppuFIN/ SteppuFIN Spam prevention
+https://github.com/Lunaversitay/ Lunaversity (CSS/PHP improvements)  
+https://github.com/meharryp/ meharryp (Security fixes)  
+https://github.com/SteppuFIN/ SteppuFIN (Spam prevention)
