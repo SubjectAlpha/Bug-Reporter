@@ -7,5 +7,5 @@ Put the bugreporter folder in your addons. Upload the web folder to your webserv
 
 ##Thanks for the help
 https://github.com/Lunaversitay/ Lunaversity  
-https://github.com/meharryp meharryp  
-https://github.com/SteppuFIN SteppuFIN
+https://github.com/meharryp/ meharryp  
+https://github.com/SteppuFIN/ SteppuFIN
