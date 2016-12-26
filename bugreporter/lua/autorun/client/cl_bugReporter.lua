@@ -38,6 +38,7 @@ end
 hook.Add( "OnPlayerChat", "BugReportCommand", function( ply, strText, bTeam, bDead )
     strText = string.lower(strText)
     if (strText == "!bugreport" or strText == "!bug" or strText == "/bugreport" or strText == "/bug") then
+	if ply ~= LocalPlayer() then return end
         BugReportDerma()
         return true
     end
