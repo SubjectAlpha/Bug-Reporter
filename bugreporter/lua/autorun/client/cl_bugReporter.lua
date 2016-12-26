@@ -35,10 +35,10 @@ function BugReportDerma()
     end
 end
 
-hook.Add( "OnPlayerChat", "BugReportCommand", function( ply, strText, bTeam, bDead )
-    strText = string.lower(strText)
+hook.Add( "OnPlayerChat", "Bug_Report_Command_ThisIsUnique", function( ply, userStrText, bTeam, bDead )
+    userStrText = string.lower(userStrText)
     if (strText == "!bugreport" or strText == "!bug" or strText == "/bugreport" or strText == "/bug") then
-	if ply ~= LocalPlayer() then return end
+		if ply ~= LocalPlayer() then return end
         BugReportDerma()
         return true
     end
