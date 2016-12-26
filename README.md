@@ -9,4 +9,5 @@ You can open the menu by using one of these chat commands(!bugreport, !bug, /bug
 ##Thanks for the help
 https://github.com/Lunaversitay/ Lunaversity (CSS/PHP improvements)  
 https://github.com/meharryp/ meharryp (Security fixes)  
-https://github.com/SteppuFIN/ SteppuFIN (Spam prevention)
+https://github.com/SteppuFIN/ SteppuFIN (Spam prevention)  
+https://github.com/Mijyuoon Mijuyoon (Clientside message fix)
