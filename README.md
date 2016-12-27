@@ -10,4 +10,5 @@ You can open the menu by using one of these chat commands(!bugreport, !bug, /bug
 https://github.com/Lunaversitay/ Lunaversity (CSS/PHP improvements)  
 https://github.com/meharryp/ meharryp (Security fixes)  
 https://github.com/SteppuFIN/ SteppuFIN (Spam prevention)  
-https://github.com/Mijyuoon Mijuyoon (Clientside message fix)
+https://github.com/Mijyuoon Mijuyoon (Clientside message fix)  
+https://github.com/SeaLife SeaLife (Switch to PDO / Upgrade style)
