@@ -53,6 +53,6 @@
 </body>
 
 <footer>
-    <p>&copy;2016 <a href="https://github.com/SubjectAlpha" style="color:#fff;">Subject_Alpha</a></p>
+    <p>&copy; <?php echo date("Y") ?> by <a href="https://github.com/SubjectAlpha">Subject_Alpha</a></p>
 </footer>
 </html>
