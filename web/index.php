@@ -6,7 +6,7 @@
     $DB_NAME = "generic_name";
 //END CONFIG--------------------------
 
-    $pdo = new PDO("mysql:host=$DB_HOSTNAME;dbname=$DB_NAME", $DB_USERNAME, $DB_PASSWORD);
+	$pdo = new PDO("mysql:host=$DB_HOSTNAME;dbname=$DB_NAME", $DB_USERNAME, $DB_PASSWORD);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$result = array();
 	try {
@@ -20,7 +20,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    	<title>Bug Reports</title>
+    	<title>3FX Bug Reports</title>
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -46,11 +46,16 @@
                         	</thead>
 
                         	<tbody>
-                            	<?php
-                            		foreach ($result as $row) {
-                                		echo htmlspecialchars("<tr><td>{$row["SteamID"]}</td><td>{$row["BugReport"]}</td></tr>", ENT_QUOTES, 'UTF-8');
-                            		}
-                            	?>
+                            	<?php foreach ($result as $row): ?>
+                            	<tr>
+                            		<td>
+                            			<?php echo htmlspecialchars( $row["SteamID"],ENT_QUOTES, 'UTF-8'); ?>
+                            		</td>
+                            		<td>
+                            			<?php echo htmlspecialchars( $row["BugReport"],ENT_QUOTES, 'UTF-8'); ?>
+                            		</td>
+                            	</tr>
+                            	<?php endforeach; ?>
                         	</tbody>
                     	</table>
 
