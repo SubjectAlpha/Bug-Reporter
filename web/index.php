@@ -48,7 +48,7 @@
                         	<tbody>
                             	<?php
                             		foreach ($result as $row) {
-                                		echo "<tr><td>{$row["SteamID"]}</td><td>{$row["BugReport"]}</td></tr>";
+                                		echo htmlspecialchars("<tr><td>{$row["SteamID"]}</td><td>{$row["BugReport"]}</td></tr>", ENT_QUOTES, 'UTF-8');
                             		}
                             	?>
                         	</tbody>
