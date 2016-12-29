@@ -4,6 +4,7 @@
     $DB_USERNAME = "admin";
     $DB_PASSWORD = "password";
     $DB_NAME = "generic_name";
+    $COMMUNITY_NAME = "My favorite server";
 //END CONFIG--------------------------
 
 	$pdo = new PDO("mysql:host=$DB_HOSTNAME;dbname=$DB_NAME", $DB_USERNAME, $DB_PASSWORD);
@@ -20,7 +21,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    	<title>3FX Bug Reports</title>
+    	<title><?php echo htmlspecialchars($COMMUNITY_NAME);?> Bug Reports</title>
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta http-equiv="X-UA-Compatible" content="ie=edge">
