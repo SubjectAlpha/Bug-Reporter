@@ -50,7 +50,20 @@
                             	<?php foreach ($result as $row): ?>
                             	<tr>
                             		<td>
-                            			<?php echo htmlspecialchars( $row["SteamID"],ENT_QUOTES, 'UTF-8'); ?>
+                            			<?php
+							$ReporterSteamID = strtolower($row["SteamID"]);
+							if (substr($ReporterSteamID,0,7)=='steam_0') {
+								$tmp=explode(':', $ReporterSteamID);
+							}
+							if ((count($tmp)==3) && is_numeric($tmp[1]) && is_numeric($tmp[2])){
+								$steamidCalc=($tmp[2]*2)+$tmp[1]; 
+								$calckey=1197960265728;
+								$pre=7656;	
+								$steamcid=$steamidCalc+$calckey;
+								$ReporterProfile = "http://steamcommunity.com/profiles/$pre" . number_format($steamcid,0,"","");
+							};
+							echo "<a href='" . $ReporterProfile . "' target='_blank'>" . $row["SteamID"] . "</a>";
+                            			?>
                             		</td>
                             		<td>
                             			<?php echo htmlspecialchars( $row["BugReport"],ENT_QUOTES, 'UTF-8'); ?>
